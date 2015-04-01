@@ -10,7 +10,8 @@ gem 'simple_form'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise'
-gem "paperclip"
+gem 'paperclip'
+gem 'will_paginate'
 
 group :development, :test do
   gem 'byebug'
