@@ -18,6 +18,7 @@ class ArticlesController < ApplicationController
       redirect_to @article
     else
       render "New"
+    end
   end
 
   def edit
