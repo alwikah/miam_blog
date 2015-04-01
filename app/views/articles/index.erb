@@ -7,3 +7,5 @@
 <% end %>
 
 <%= link_to 'New', new_article_path %>
+
+<%= will_paginate @articles, inner_window: 1 %>
