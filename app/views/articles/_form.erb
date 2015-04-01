@@ -1,0 +1,8 @@
+<%= simple_form_for @article, { class: 'input-field'} do |f| %>
+  <%= f.input :title, label: 'Dish name'%>
+  <%= f.input :summary, label: 'Summary' %>
+  <%= f.input :description, label: 'Description'%>
+  <%= f.input :author, label: 'Author(s)'%>
+  <br/>
+  <%= f.button :submit %>
+<% end %>
