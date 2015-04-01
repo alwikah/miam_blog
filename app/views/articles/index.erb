@@ -1,1 +1,8 @@
 <h1>All articles</h1>
+
+<% @articles.each do |article| %>
+  <h3><%= article.title %></h3>
+  <p><%= article.summary %></p>
+<% end %>
+
+<%= link_to 'New', new_article_path %>
