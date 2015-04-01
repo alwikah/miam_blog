@@ -1,4 +1,6 @@
-<%= simple_form_for @article, { class: 'input-field'} do |f| %>
+<%= simple_form_for @article, { class: 'input-field', multipart: true } do |f| %>
+  <%= f.input :image, as: :file, label: 'Photo' %>
+  <br>
   <%= f.input :title, label: 'Dish name'%>
   <%= f.input :summary, label: 'Summary' %>
   <%= f.input :description, label: 'Description'%>
