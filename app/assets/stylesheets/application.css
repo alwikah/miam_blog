@@ -17,3 +17,7 @@
 .vertical-spacer {
   height: 4em;
 }
+
+.card .card-image img {
+  height: 250px;
+}
