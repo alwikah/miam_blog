@@ -1,11 +1,14 @@
 <div class="container">
-  <h1><%= @article.title %></h1>
-  <%= image_tag @article.image.url(:medium) %>
-  <p><%= @article.summary %></p>
-  <p><%= @article.description %></p>
-  <p><%= @article.author %></p>
-
-  <%= link_to 'Home', root_path %>
-  <%= link_to 'Edit', edit_article_path %>
-  <%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %>
+  <div class="row">
+    <div class="col s12 m6 l6">
+      <h1><%= @article.title %></h1>
+      <%= image_tag @article.image.url(:medium) %>
+      <p><%= @article.summary %></p>
+      <p><%= @article.description %></p>
+      <p><%= @article.author %></p>
+      <%= link_to 'Home', root_path %>
+      <%= link_to 'Edit', edit_article_path %>
+      <%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %>
+    </div>
+  </div>
 </div>
